@@ -1,0 +1,9 @@
+# Generated files by Hugo
+public/
+resources/_gen/
+assets/jsconfig.json
+hugo_stats.json
+.hugo_build.lock
+
+# Temporary folders
+keri_repo_temp/
