@@ -1,0 +1,86 @@
+baseURL = "https://looit36.github.io/"
+title = "Looit's Blog"
+locale = "vi-vn"
+DefaultContentLanguage = "vi"
+theme = "mainroad"
+
+pygmentsUseClasses = true
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+
+[params]
+    author = "LOOIT"
+    description = "linh tinh tung..."
+    copyright = "Looit's Blog"
+    opengraph = true
+    schema = true
+    twitter_cards = true
+    readmore = true
+    pager = true
+    post_meta = ["date", "categories", "tags"]
+    mainSections = ["posts"]
+    dateformat = "2006-01-02"
+    mathjax = true
+    mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js"
+    mathjaxConfig = "TeX-AMS-MML_HTMLorMML"
+    googleFontsLink = "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    customCSS = ["css/custom.css", "css/syntax.css"]
+    customJS = ["js/custom.js"]
+
+[params.style.vars]
+    highlightColor = "#0000ff"
+
+[params.logo]
+    subtitle = "linh tinh lung tung..."
+
+[params.sidebar]
+    home = "right"
+    list = "right"
+    single = "right"
+    widgets = ["search", "toc", "social", "spotlight", "recent", "categories", "taglist"]
+
+[params.widgets]
+    recent_num = 5
+    categories_counter = true
+    tags_counter = true
+
+[params.widgets.social]
+    github = "looit36"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[permalinks]
+    posts = "/posts/:contentbasename/"
+
+[pagination]
+    pagerSize = "20"
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+[[menu.main]]
+    name = "Works"
+    url = "/works/"
+    weight = 3
+[[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 4
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 5
+[[menu.main]]
+    name = "Archives"
+    url = "/posts/"
+    weight = 6
