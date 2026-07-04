@@ -53,7 +53,7 @@ pygmentsCodefencesGuessSyntax = true
   tag = "tags"
 
 [permalinks]
-    posts = "/posts/:filename/"
+    posts = "/posts/:contentbasename/"
 
 [pagination]
     pagerSize = "20"
