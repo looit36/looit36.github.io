@@ -3,6 +3,7 @@ title = "Looit's Blog"
 locale = "vi-vn"
 DefaultContentLanguage = "vi"
 theme = "mainroad"
+buildFuture = true
 
 pygmentsUseClasses = true
 pygmentsCodefences = true
