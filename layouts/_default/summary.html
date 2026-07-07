@@ -2,13 +2,20 @@
 	{{- if .Params.thumbnail }}
 	<figure class="list__thumbnail">
 		<a href="{{ .RelPermalink }}">
-			<img src="{{ .RelPermalink }}{{ .Params.thumbnail }}" alt="{{ .Title }}" />
+			{{- $thumb := .Params.thumbnail }}
+			{{- if or (hasPrefix $thumb "/") (hasPrefix $thumb "http") (hasPrefix $thumb "img/") }}
+				<img src="{{ $thumb | relURL }}" alt="{{ .Title }}" />
+			{{- else }}
+				<img src="{{ .RelPermalink }}{{ $thumb }}" alt="{{ .Title }}" />
+			{{- end }}
 		</a>
 	</figure>
 	{{- else }}
 	<figure class="list__thumbnail">
 		<a href="{{ .RelPermalink }}">
-			<img src="{{ .Site.Params.thumbnail.default | relURL }}" alt="{{ .Title }}" />
+			{{- if .Site.Params.thumbnail.default }}
+				<img src="{{ .Site.Params.thumbnail.default | relURL }}" alt="{{ .Title }}" />
+			{{- end }}
 		</a>
 	</figure>
 	{{- end }}
