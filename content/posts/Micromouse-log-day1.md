@@ -25,7 +25,7 @@ Mình quá tập trung vào tối ưu từng hệ thống một với hy vọng 
 
 Trước mình dùng laser để đọc khoảng cách (vl53l0x), nhưng nó đọc mỗi lần nhanh nhất mất tận 20ms, cũng dùng được thôi nhưng hồi đó mình chưa biết đến RTOS nên để đọc thì phải chịu cái hàm block của nó, thì sẽ ảnh hướng đến vòng 1000hz tính toán các kiểu của mình. Nên lần này sẽ thay sang hồng ngoại để có thể đọc ADC tức thì.
 
-<img src="/img/mlogd1/mlogd1_P.jpg" style="width: 30%; display: block; margin: 0 auto;">
+<img src="/img/mlogd1/mlogd1_p.jpg" style="width: 30%; display: block; margin: 0 auto;">
 
 Và cũng do mọi micromouse thiết kế đều dùng IR... Mình có đặt mua mấy con linh kiện 0603 để test luôn xem sao. Nó bé quá sức tưởng tượng, thổi cái là có thể thổi bay luôn rồi. Qua hàn được quả này cũng phải căng mắt nín thở mới dính vào được, xong thì test với cái điều khiển điều hòa thì đọc ADC ngon lành rồi.
 
